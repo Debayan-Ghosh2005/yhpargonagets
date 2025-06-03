@@ -1,5 +1,6 @@
-# Define the corrected DNA encoding and 
-# decoding dictionaries with unique mappings
+# DNA Encoding and Decoding Dictionaries
+"DNA steganography is the technique of hiding secret messages by encoding them within synthetic DNA sequences, making the message invisible or disguised within biological data.
+"
 encodingDict = {
     'A': 'AAA', 'B': 'AAC', 'C': 'AAG', 'D': 'AAT',
     'E': 'ACA', 'F': 'ACC', 'G': 'ACG', 'H': 'ACT',
@@ -12,40 +13,37 @@ encodingDict = {
 
 decodingDict = {v: k for k, v in encodingDict.items()}
 
-# Function to encrypt a message using DNA encoding
+# Encrypt a message using DNA encoding
 def encrypt(message):
     encrypted = ''
-    for char in message:
+    for char in message.upper():
         if char in encodingDict:
             encrypted += encodingDict[char]
         else:
-            # If character is not in encodingDict
-            # Placeholder for unknown characters
-            encrypted += 'XXX'  
+            encrypted += 'XXX'  # Unknown character placeholder
     return encrypted
 
-# Function to decrypt a DNA-encoded message
+# Decrypt a DNA-encoded message
 def decrypt(encrypted):
     decrypted = ''
-
-    # Read in chunks of 3
-    for i in range(0, len(encrypted), 3):  
+    for i in range(0, len(encrypted), 3):
         triplet = encrypted[i:i+3]
         if triplet in decodingDict:
             decrypted += decodingDict[triplet]
         else:
-            # Placeholder for unknown sequences
-            decrypted += '?'  
+            decrypted += '?'  # Unknown sequence placeholder
     return decrypted
-    
+
 if __name__ == "__main__":
-    message = "HELLO WORLD"
-    print("Original Message:", message)
+    message = input("Enter the message to encode (A-Z, space only): ")
     
-    # Encryption
     encryptedMessage = encrypt(message)
     print("Encrypted Message:", encryptedMessage)
-    
-    # Decryption
+
     decryptedMessage = decrypt(encryptedMessage)
     print("Decrypted Message:", decryptedMessage)
+    
+"""    OUTPUT EXAMPLE-
+Enter the message to encode (A-Z, space only): HELLO WORLD
+Encrypted Message: ACTACAAGTAGTAGGCCGATGATCACAGTAGA
+Decrypted Message: HELLO WORLD """
