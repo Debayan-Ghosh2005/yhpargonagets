@@ -1,12 +1,22 @@
-
 <h1 align="center">🔐 YHPARGONAGETS: Steganography & Cryptography Toolkit 🎨</h1>
 
-<p align="center">
-  <b>A fusion of cryptographic techniques and steganography for data security and encoding experiments.</b><br>
-  <i>Hide in plain sight, secure in complexity!</i>
-</p>
-
----
+<div align="center">
+  <table>
+    <tr>
+      <td width="55%">
+        <h3><b>About the Project</b></h3>
+        <p>
+          <b>YHPARGONAGETS</b> is a powerful Python-based toolkit that blends <strong>cryptographic encryption</strong> with <strong>steganographic techniques</strong>
+          to secure messages in plain sight. Whether hiding secrets in whitespace or applying encryption before obfuscation, this project
+          demonstrates the fascinating world of <code>secure communication</code> using visual and invisible mediums.
+        </p>
+      </td>
+      <td width="45%">
+        <img src="https://user-images.githubusercontent.com/74038190/235224431-e8c8c12e-6826-47f1-89fb-2ddad83b3abf.gif" width="100%">
+      </td>
+    </tr>
+  </table>
+</div>
 
 ## 📁 Project Structure
 
@@ -49,6 +59,10 @@ python AdEnSt.py
 > 💡 Make sure Python 3.x is installed.
 
 ---
+## 🎥 Project Demo
+
+![Steganography Demo](https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif)
+
 
 ## 🧰 Tech Stack Used
 
@@ -91,6 +105,19 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 [![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
+<a href="https://github.com/Debayan-Ghosh2005/yhpargonagets">
+  <img src="https://forthebadge.com/images/badges/built-with-love.svg" width="130" alt="made with love markdown badge">
+</a>
+<a href="https://github.com/Debayan-Ghosh2005/yhpargonagets">
+  <img src="https://forthebadge.com/images/badges/built-with-swag.svg" width="130" alt="made with swag markdown badge">
+</a>
+<a href="https://github.com/Debayan-Ghosh2005/yhpargonagets">
+  <img src="https://forthebadge.com/images/badges/open-source.svg" width="130" height="30" alt="open source markdown badge">
+</a>
+<br>
+<a href="https://github.com/Debayan-Ghosh2005/yhpargonagets">
+  <img src="https://forthebadge.com/images/badges/made-with-markdown.svg" width="230" height="30" alt="made with markdown badge">
+</a>
 
 ---
 
