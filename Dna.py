@@ -1,6 +1,6 @@
 # DNA Encoding and Decoding Dictionaries
-"DNA steganography is the technique of hiding secret messages by encoding them within synthetic DNA sequences, making the message invisible or disguised within biological data.
-"
+# DNA steganography is the technique of hiding secret messages by encoding them within synthetic DNA sequences, making the message invisible or disguised within biological data.
+
 encodingDict = {
     'A': 'AAA', 'B': 'AAC', 'C': 'AAG', 'D': 'AAT',
     'E': 'ACA', 'F': 'ACC', 'G': 'ACG', 'H': 'ACT',
