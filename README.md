@@ -66,7 +66,7 @@ python AdEnSt.py
 | Name              | GitHub Profile                                  |
 |-------------------|-------------------------------------------------|
 | Debayan Ghosh     | [@Debayan-Ghosh2005](https://github.com/Debayan-Ghosh2005) |
-| Nirnoy Chatterjee  | [@Nirnoy12]()|(https://github.com/Nirnoy12)
+| Nirnoy Chatterjee  | [@Nirnoy12](https://github.com/Nirnoy12)|
 
 > Want to contribute? Fork and raise a pull request! 🙌
 
@@ -74,9 +74,9 @@ python AdEnSt.py
 
 ## 📊 GitHub Insights
 
-- 📌 **Last Commit:** `June 4, 2025`
-- 📦 **Last Repo Push:** [`d6e8c86`](https://github.com/your-username/YHPARGONAGETS/commit/d6e8c86e)  
-- 🚀 **Total Pushes:** `12+`
+![GitHub last commit](https://img.shields.io/github/last-commit/Debayan-Ghosh2005/yhpargonagets)
+![GitHub issues](https://img.shields.io/github/issues/Debayan-Ghosh2005/yhpargonagets)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/Debayan-Ghosh2005/yhpargonagets)
 
 ---
 
