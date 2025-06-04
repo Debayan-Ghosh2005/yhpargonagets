@@ -22,16 +22,19 @@
 
 ```bash
 YHPARGONAGETS/
-│
 ├── C_Graphy/                   # 🔐 Cryptography utilities
+│   ├── 3DeS.py                 # Triple DES algorithm
 │   ├── AdEnSt.py               # Advanced Encryption + Stego logic
+│   ├── BlOwFiSh.py             # Blowfish algorithm implementation
+│   ├── EcE.py                  # ECC or similar crypto
 │   └── RiShAd.py               # Another crypto implementation
 │
-├── S_Graphy/Whitespace/        # 🧙‍♂️ Whitespace Steganography
-│   ├── whitespace_stegano.py  # Core whitespace stego script
-│   ├── decoded.txt             # Output: Decoded message
-│   ├── log.txt                 # Log details
-│   └── stego_output.txt        # Output: Encoded result
+├── S_Graphy/
+│   └── Whitespace/             # 🧙‍♂️ Whitespace Steganography
+│       ├── whitespace_stegano.py  # Core whitespace stego script
+│       ├── decoded.txt             # Output: Decoded message
+│       ├── log.txt                 # Log details
+│       └── stego_output.txt        # Output: Encoded result
 │
 └── README.md                   # 📘 This file
 ```
