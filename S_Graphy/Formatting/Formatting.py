@@ -1,7 +1,7 @@
 import os
 import json
 
-LOG_FILE = "S_Graphy\Formatting\format_log.json"
+LOG_FILE = "format_log2.json"
 
 def save_log(log_data):
     with open(LOG_FILE, "w") as f:
