@@ -1,0 +1,88 @@
+{
+    "1": {
+        "encoded_text": "This is  a long enough  sentence to hide a message  using  formatting tricks  with space spacing  and steganography.",
+        "log": {
+            "0": {
+                "word": "This",
+                "bit": "0",
+                "space_type": "single"
+            },
+            "1": {
+                "word": "is",
+                "bit": "1",
+                "space_type": "double"
+            },
+            "2": {
+                "word": "a",
+                "bit": "0",
+                "space_type": "single"
+            },
+            "3": {
+                "word": "long",
+                "bit": "0",
+                "space_type": "single"
+            },
+            "4": {
+                "word": "enough",
+                "bit": "1",
+                "space_type": "double"
+            },
+            "5": {
+                "word": "sentence",
+                "bit": "0",
+                "space_type": "single"
+            },
+            "6": {
+                "word": "to",
+                "bit": "0",
+                "space_type": "single"
+            },
+            "7": {
+                "word": "hide",
+                "bit": "0",
+                "space_type": "single"
+            },
+            "8": {
+                "word": "a",
+                "bit": "0",
+                "space_type": "single"
+            },
+            "9": {
+                "word": "message",
+                "bit": "1",
+                "space_type": "double"
+            },
+            "10": {
+                "word": "using",
+                "bit": "1",
+                "space_type": "double"
+            },
+            "11": {
+                "word": "formatting",
+                "bit": "0",
+                "space_type": "single"
+            },
+            "12": {
+                "word": "tricks",
+                "bit": "1",
+                "space_type": "double"
+            },
+            "13": {
+                "word": "with",
+                "bit": "0",
+                "space_type": "single"
+            },
+            "14": {
+                "word": "space",
+                "bit": "0",
+                "space_type": "single"
+            },
+            "15": {
+                "word": "spacing",
+                "bit": "1",
+                "space_type": "double"
+            }
+        },
+        "secret_msg": "Hi"
+    }
+}
