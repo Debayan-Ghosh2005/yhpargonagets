@@ -21,23 +21,85 @@
 ## 📁 Project Structure
 
 ```bash
-YHPARGONAGETS/
-├── C_Graphy/                   # 🔐 Cryptography utilities
-│   ├── 3DeS.py                 # Triple DES algorithm
-│   ├── AdEnSt.py               # Advanced Encryption + Stego logic
-│   ├── BlOwFiSh.py             # Blowfish algorithm implementation
-│   ├── EcE.py                  # ECC or similar crypto
-│   └── RiShAd.py               # Another crypto implementation
+YHPARGONAGETS
+├── C_Graphy                     🔐 Cryptography Utilities
+│   ├── 3DeS.py                  Triple DES algorithm
+│   ├── AdEnSt.py                Advanced Encryption + Stego logic
+│   ├── BlOwFiSh.py              Blowfish encryption module
+│   ├── EcE.py                   ECC or similar encryption
+│   └── RiShAd.py                Custom crypto implementation
 │
-├── S_Graphy/
-│   └── Whitespace/             # 🧙‍♂️ Whitespace Steganography
-│       ├── whitespace_stegano.py  # Core whitespace stego script
-│       ├── decoded.txt             # Output: Decoded message
-│       ├── log.txt                 # Log details
-│       └── stego_output.txt        # Output: Encoded result
+├── S_Graphy                     🧠 Steganography Modules
+│   ├── Formatting               📝 Formatting-based Steganography
+│   │   ├── Formatting.py            Core script
+│   │   └── format_log.json          Encoding log
+│   │
+│   ├── Synonym                  🧠 Synonym-based Steganography
+│   │   └── Synonym.py               Synonym encoding script
+│   │
+│   └── Whitespace              🧙‍♂️ Whitespace Steganography
+│       ├── whitespace_stegano.py       Core logic
+│       ├── python whitespace_stegano_gui.py  GUI version (consider renaming)
+│       ├── stego_log.json              Stego log file
+│       ├── stego_log2.json             Alternate log
+│       └── syn_stego_log.json          Possibly related to Synonym
 │
-└── README.md                   # 📘 This file
+└── README.md                   📘 Project documentation
+
 ```
+# 📂 YHPARGONAGETS
+
+**YHPARGONAGETS** is a combined project on **Cryptography** and **Steganography**, offering various techniques to hide or secure information using different algorithms and encoding methods. It demonstrates classic and modern approaches to both fields in a modular, script-based layout.
+
+---
+
+## 🔐 C_Graphy — Cryptography Utilities
+
+This folder contains implementations of popular and custom encryption algorithms:
+
+- `3DeS.py` – Implements the Triple DES encryption algorithm  
+- `AdEnSt.py` – A combined logic of Advanced Encryption + Steganography  
+- `BlOwFiSh.py` – Blowfish cipher implementation  
+- `EcE.py` – Likely ECC (Elliptic Curve Cryptography) or similar encryption method  
+- `RiShAd.py` – A custom or experimental encryption method  
+
+---
+
+## 🧠 S_Graphy — Steganography Modules
+
+This directory contains different steganography techniques used to conceal information within text using whitespace, formatting, or synonyms.
+
+### 📝 Formatting/
+- `Formatting.py` – Encodes binary data using text formatting (e.g., extra spaces)  
+- `format_log.json` – Stores the log of formatting operations and results  
+
+### 🧠 Synonym/
+- `Synonym.py` – Replaces words with synonyms to hide binary data within readable text  
+
+### 🧙‍♂️ Whitespace/
+- `whitespace_stegano.py` – Core script using whitespace (single vs double spaces) for encoding  
+- `python whitespace_stegano_gui.py` – GUI version of the whitespace steganography script  
+- `stego_log.json` – Log file storing basic whitespace encoding operations  
+- `stego_log2.json` – Variant or extended log file  
+- `syn_stego_log.json` – May be related to synonym steganography (consider relocating if needed)  
+
+---
+
+## 📘 README.md
+This file provides an overview of the entire project, directory structure, and description of scripts and utilities.
+
+---
+
+## ✅ Features
+
+- Multiple cryptographic algorithm implementations  
+- Text-based steganography using:
+  - Whitespace variations  
+  - Synonym substitution  
+  - Formatting differences  
+- Logging and retrieval of hidden messages  
+- Support for multiple encoding/decoding sessions  
+- Easy-to-extend modular design  
 
 ---
 
