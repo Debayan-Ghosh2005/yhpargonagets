@@ -1,7 +1,7 @@
 import os
 import json
 
-LOG_FILE = "format_log2.json"
+LOG_FILE = "format_log.json"
 
 def save_log(log_data):
     with open(LOG_FILE, "w") as f:
@@ -24,7 +24,7 @@ def bits_to_text(bits):
 # --- Encoding using double/single space
 def encode_formatting(cover_text, secret_msg):
     bits = text_to_bits(secret_msg)
-    words = cover_text.split(' ')
+    words = cover_text.split()
     if len(words) < len(bits) + 1:
         raise ValueError("Not enough words in cover text to hide the secret.")
 
@@ -45,22 +45,22 @@ def encode_formatting(cover_text, secret_msg):
 
 # --- Decode from formatting (double/single space)
 def decode_formatting(encoded_text):
-    # detect spaces between words
-    parts = encoded_text.split(' ')
     bits = []
     i = 0
-    while i < len(parts) - 1:
-        if parts[i] == '':
-            bits.append('1')
-            i += 2  # double space detected
+    while i < len(encoded_text) - 1:
+        if encoded_text[i] == ' ':
+            if i + 1 < len(encoded_text) and encoded_text[i + 1] == ' ':
+                bits.append('1')
+                i += 2
+            else:
+                bits.append('0')
+                i += 1
         else:
-            bits.append('0')
-            i += 1  # single space
+            i += 1
     try:
-        secret = bits_to_text(''.join(bits))
+        return bits_to_text(''.join(bits))
     except:
-        secret = ""
-    return secret
+        return "[ERROR: Unable to decode bits]"
 
 def main():
     print("=== Formatting Steganography ===")
@@ -104,14 +104,16 @@ def main():
             for mid in ids:
                 if mid in logs:
                     encoded = logs[mid]["encoded_text"]
-                    parts = encoded.split(' ')
                     i = 0
-                    while i < len(parts) - 1:
-                        if parts[i] == '':
-                            combined_bits += '1'
-                            i += 2
+                    while i < len(encoded) - 1:
+                        if encoded[i] == ' ':
+                            if i + 1 < len(encoded) and encoded[i + 1] == ' ':
+                                combined_bits += '1'
+                                i += 2
+                            else:
+                                combined_bits += '0'
+                                i += 1
                         else:
-                            combined_bits += '0'
                             i += 1
                 else:
                     print(f"ID {mid} not found.")

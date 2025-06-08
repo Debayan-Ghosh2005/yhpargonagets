@@ -1,9 +1,9 @@
 {
     "1": {
-        "encoded_text": "This is  a long enough  sentence to hide a message  using  formatting tricks  with space spacing  and steganography.",
+        "encoded_text": "today is  good  day.i went  school.school is very bad place  .why  ppl go  to school.school is  bad .i hat school",
         "log": {
             "0": {
-                "word": "This",
+                "word": "today",
                 "bit": "0",
                 "space_type": "single"
             },
@@ -13,76 +13,76 @@
                 "space_type": "double"
             },
             "2": {
-                "word": "a",
-                "bit": "0",
-                "space_type": "single"
+                "word": "good",
+                "bit": "1",
+                "space_type": "double"
             },
             "3": {
-                "word": "long",
+                "word": "day.i",
                 "bit": "0",
                 "space_type": "single"
             },
             "4": {
-                "word": "enough",
+                "word": "went",
                 "bit": "1",
                 "space_type": "double"
             },
             "5": {
-                "word": "sentence",
+                "word": "school.school",
                 "bit": "0",
                 "space_type": "single"
             },
             "6": {
-                "word": "to",
+                "word": "is",
                 "bit": "0",
                 "space_type": "single"
             },
             "7": {
-                "word": "hide",
+                "word": "very",
                 "bit": "0",
                 "space_type": "single"
             },
             "8": {
-                "word": "a",
+                "word": "bad",
                 "bit": "0",
                 "space_type": "single"
             },
             "9": {
-                "word": "message",
+                "word": "place",
                 "bit": "1",
                 "space_type": "double"
             },
             "10": {
-                "word": "using",
+                "word": ".why",
                 "bit": "1",
                 "space_type": "double"
             },
             "11": {
-                "word": "formatting",
+                "word": "ppl",
                 "bit": "0",
                 "space_type": "single"
             },
             "12": {
-                "word": "tricks",
+                "word": "go",
                 "bit": "1",
                 "space_type": "double"
             },
             "13": {
-                "word": "with",
+                "word": "to",
                 "bit": "0",
                 "space_type": "single"
             },
             "14": {
-                "word": "space",
+                "word": "school.school",
                 "bit": "0",
                 "space_type": "single"
             },
             "15": {
-                "word": "spacing",
+                "word": "is",
                 "bit": "1",
                 "space_type": "double"
             }
         },
-        "secret_msg": "Hi"
+        "secret_msg": "hi"
     }
 }
