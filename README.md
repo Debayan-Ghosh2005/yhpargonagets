@@ -144,13 +144,18 @@ python AdEnSt.py
 
 | Name              | GitHub Profile                                  |
 |-------------------|-------------------------------------------------|
-| Debayan Ghosh     | [@Debayan-Ghosh2005](https://github.com/Debayan-Ghosh2005) |
+| Debayan Ghosh    | [@Debayan-Ghosh2005](https://github.com/Debayan-Ghosh2005) |
 | Nirnoy Chatterjee  | [@Nirnoy12](https://github.com/Nirnoy12)|
-
-> Want to contribute? Fork and raise a pull request! 🙌
+| Sulagna Chakraborty  | [@celestial201](https://github.com/celestial201)|
 
 ---
+## 🙌 Contribute - Only for invited accounts!
 
+You might encounter some bugs while using this app. You are more than welcome to contribute. Just submit changes via pull request and I will review them before merging. Make sure you follow community guidelines.
+
+## ⭐ Give A Star
+
+You can also give this repository a star to show more people and they can use this repository.ok!
 ## 📊 GitHub Insights
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/Debayan-Ghosh2005/yhpargonagets)
