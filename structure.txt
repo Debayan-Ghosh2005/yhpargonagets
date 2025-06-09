@@ -1,22 +1,27 @@
 # tree /F > structure.txt run this
 
-Folder PATH listing for volume New Volume
-Volume serial number is 10F9-5226
 D:.
-�   README.md
-�   structure.txt
-�   
-+---C_Graphy
-�       3DeS.py
-�       AdEnSt.py
-�       BlOwFiSh.py
-�       EcE.py
-�       RiShAd.py
-�       
-+---S_Graphy
-    +---Whitespace
-            decoded.txt
-            log.txt
-            stego_output.txt
+│   README.md
+│   structure.txt
+│   
+├───C_Graphy
+│       3DeS.py
+│       AdEnSt.py
+│       BlOwFiSh.py
+│       EcE.py
+│       RiShAd.py
+│
+└───S_Graphy
+    ├───Formatting
+    │       Formatting.py
+    │       format_log.json
+    │
+    ├───Synonym
+    │       Synonym.PY
+    │
+    └───Whitespace
+            python whitespace_stegano_gui.py
+            stego_log.json
+            stego_log2.json
+            syn_stego_log.json
             whitespace_stegano.py
-            
