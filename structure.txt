@@ -1,0 +1,27 @@
+# tree /F > structure.txt run this
+
+D:.
+│   README.md
+│   structure.txt
+│   
+├───C_Graphy
+│       3DeS.py
+│       AdEnSt.py
+│       BlOwFiSh.py
+│       EcE.py
+│       RiShAd.py
+│
+└───S_Graphy
+    ├───Formatting
+    │       Formatting.py
+    │       format_log.json
+    │
+    ├───Synonym
+    │       Synonym.PY
+    │
+    └───Whitespace
+            python whitespace_stegano_gui.py
+            stego_log.json
+            stego_log2.json
+            syn_stego_log.json
+            whitespace_stegano.py

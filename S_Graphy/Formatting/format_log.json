@@ -1,0 +1,88 @@
+{
+    "1": {
+        "encoded_text": "today is  good  day.i went  school.school is very bad place  .why  ppl go  to school.school is  bad .i hat school",
+        "log": {
+            "0": {
+                "word": "today",
+                "bit": "0",
+                "space_type": "single"
+            },
+            "1": {
+                "word": "is",
+                "bit": "1",
+                "space_type": "double"
+            },
+            "2": {
+                "word": "good",
+                "bit": "1",
+                "space_type": "double"
+            },
+            "3": {
+                "word": "day.i",
+                "bit": "0",
+                "space_type": "single"
+            },
+            "4": {
+                "word": "went",
+                "bit": "1",
+                "space_type": "double"
+            },
+            "5": {
+                "word": "school.school",
+                "bit": "0",
+                "space_type": "single"
+            },
+            "6": {
+                "word": "is",
+                "bit": "0",
+                "space_type": "single"
+            },
+            "7": {
+                "word": "very",
+                "bit": "0",
+                "space_type": "single"
+            },
+            "8": {
+                "word": "bad",
+                "bit": "0",
+                "space_type": "single"
+            },
+            "9": {
+                "word": "place",
+                "bit": "1",
+                "space_type": "double"
+            },
+            "10": {
+                "word": ".why",
+                "bit": "1",
+                "space_type": "double"
+            },
+            "11": {
+                "word": "ppl",
+                "bit": "0",
+                "space_type": "single"
+            },
+            "12": {
+                "word": "go",
+                "bit": "1",
+                "space_type": "double"
+            },
+            "13": {
+                "word": "to",
+                "bit": "0",
+                "space_type": "single"
+            },
+            "14": {
+                "word": "school.school",
+                "bit": "0",
+                "space_type": "single"
+            },
+            "15": {
+                "word": "is",
+                "bit": "1",
+                "space_type": "double"
+            }
+        },
+        "secret_msg": "hi"
+    }
+}
