@@ -1,65 +1,75 @@
 from PIL import Image
 import os
 
+# Convert string to binary
 def to_bin(data):
-    return ''.join(format(ord(i), '08b') for i in data)
+    return ''.join(format(ord(c), '08b') for c in data)
 
-def encode_lsb_sub(message):
-    # Input image path
+# Convert binary to string
+def bin_to_text(binary_data):
+    chars = [chr(int(binary_data[i:i+8], 2)) for i in range(0, len(binary_data), 8)]
+    return ''.join(chars)
+
+# Encode message into image
+def encode_lsb_sub():
+    # Hardcoded message
+    message = "This is a secret message from Debayan 👨‍💻"
+
+    # Input and output image paths
     image_path = r"D:\Debayan\yhpargonagets\IS_Graphy\apple.png"
+    output_path = r"D:\Debayan\yhpargonagets\IS_Graphy\LSB\apple_encoded.png"
+
+    # Load image and ensure RGB
     img = Image.open(image_path).convert("RGB")
-
-    # Save encoded image in same folder with _encoded.png suffix
-    base_name = os.path.splitext(os.path.basename(image_path))[0]
-    folder = os.path.dirname(image_path)
-    output_path = os.path.join(folder, f"{base_name}_encoded.png")
-
-    # Prepare message
-    msg = to_bin(message + "####")
     encoded = img.copy()
-    w, h = img.size
-    idx = 0
+    width, height = img.size
 
-    # Embed message bits into image
-    for y in range(h):
-        for x in range(w):
-            if idx >= len(msg):
+    # Convert message to binary and add delimiter
+    binary_msg = to_bin(message + "####")
+    msg_index = 0
+    msg_len = len(binary_msg)
+
+    for y in range(height):
+        for x in range(width):
+            if msg_index >= msg_len:
                 break
             r, g, b = encoded.getpixel((x, y))
-            if idx < len(msg):
-                r = int(format(r, '08b')[:-1] + msg[idx], 2)
-                idx += 1
-            if idx < len(msg):
-                g = int(format(g, '08b')[:-1] + msg[idx], 2)
-                idx += 1
-            if idx < len(msg):
-                b = int(format(b, '08b')[:-1] + msg[idx], 2)
-                idx += 1
+
+            if msg_index < msg_len:
+                r = int(format(r, '08b')[:-1] + binary_msg[msg_index], 2)
+                msg_index += 1
+            if msg_index < msg_len:
+                g = int(format(g, '08b')[:-1] + binary_msg[msg_index], 2)
+                msg_index += 1
+            if msg_index < msg_len:
+                b = int(format(b, '08b')[:-1] + binary_msg[msg_index], 2)
+                msg_index += 1
+
             encoded.putpixel((x, y), (r, g, b))
 
-    # Save encoded image
-    try:
-        encoded.save(output_path, "PNG")
-        print(f"✅ Message encoded and saved as: {output_path}")
-    except Exception as e:
-        print(f"❌ Error saving image: {e}")
+        if msg_index >= msg_len:
+            break
 
+    encoded.save(output_path, "PNG")
+    print(f"✅ Message encoded and saved at: {output_path}")
+
+# Decode message from image
 def decode_lsb_sub():
-    encoded_path = r"D:\Debayan\yhpargonagets\IS_Graphy\apple_encoded.png"
-    if not os.path.exists(encoded_path):
-        print("❌ Encoded image not found.")
-        return
-
+    encoded_path = r"D:\Debayan\yhpargonagets\IS_Graphy\LSB\apple_encoded.png"
     img = Image.open(encoded_path)
-    binary = ""
+    binary_data = ""
 
     for y in range(img.height):
         for x in range(img.width):
             r, g, b = img.getpixel((x, y))
-            binary += format(r, '08b')[-1]
-            binary += format(g, '08b')[-1]
-            binary += format(b, '08b')[-1]
+            binary_data += format(r, '08b')[-1]
+            binary_data += format(g, '08b')[-1]
+            binary_data += format(b, '08b')[-1]
 
-    chars = [chr(int(binary[i:i+8], 2)) for i in range(0, len(binary), 8)]
-    message = ''.join(chars).split("####")[0]
-    print(f"🔍 Decoded message: {message}")
+    message = bin_to_text(binary_data)
+    final_message = message.split("####")[0]
+    print(f"🔍 Decoded message: {final_message}")
+if __name__ == "__main__":
+    if not os.path.exists(r"D:\Debayan\yhpargonagets\IS_Graphy\LSB\apple_encoded.png"):
+        encode_lsb_sub()
+    decode_lsb_sub()            
