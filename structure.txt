@@ -1,5 +1,6 @@
-# tree /F > structure.txt run this
-
+tree/F
+Folder PATH listing for volume New Volume
+Volume serial number is 10F9-5226
 D:.
 │   README.md
 │   structure.txt
@@ -11,6 +12,42 @@ D:.
 │       EcE.py
 │       RiShAd.py
 │
+├───IS_Graphy
+│   │   apple.jpg
+│   │   apple.png
+│   │
+│   ├───DWT
+│   │       A.py
+│   │       apple.jpg
+│   │       apple_stego_1.jpg
+│   │       apple_stego_2.jpg
+│   │       apple_stego_3.jpg
+│   │
+│   ├───F5
+│   │       A.py
+│   │
+│   ├───HIDDEN
+│   │       A.py
+│   │
+│   ├───ISGAN
+│   │       A.py
+│   │
+│   ├───LSB
+│   │       apple_encoded.png
+│   │       Substitution.py
+│   │
+│   ├───S-UNIWARD
+│   │       A.py
+│   │
+│   ├───STEGANOGAN
+│   │       A.py
+│   │
+│   ├───UDH
+│   │       A.py
+│   │
+│   └───WOW
+│           A.py
+│
 └───S_Graphy
     ├───Formatting
     │       Formatting.py
@@ -18,6 +55,7 @@ D:.
     │
     ├───Synonym
     │       Synonym.PY
+    │       syn_stego_log.json
     │
     └───Whitespace
             python whitespace_stegano_gui.py
