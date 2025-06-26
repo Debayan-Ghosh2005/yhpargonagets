@@ -330,9 +330,8 @@ def fixed_demo_lossless_format():
             print("[ERROR] Could not create test image")
             return False
 
-    test_message = "Hello this is Subhradeep Kar"
-    output_path = "apple_stego.png"  # FIXED: Use PNG format instead of JPG
-
+    test_message = "Hello this is Subhradeep Kar" # MISTAKE
+    output_path = "/home/suboptimal/Steganography/yhpargonagets/IS_Graphy/DWT"  # MISTAKE FIXED
     print(f"\nTesting with message: '{test_message}'")
     print(f"Message length: {len(test_message)} characters")
     print("=" * 60)
@@ -403,3 +402,9 @@ if __name__ == "__main__":
         print(f"{'=' * 80}")
     else:
         print("\n❌ Issues remain - check implementation")
+
+
+        # To many libraries
+        # input path
+        # seperate files for embed and decode and switch case 
+        # text file for dwt 
