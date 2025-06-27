@@ -1,0 +1,25 @@
+Discrete Wavelet Transform (DWT) steganography is a sophisticated data hiding technique that operates in the frequency domain to embed secret information within digital images. Unlike spatial domain methods, DWT steganography transforms images into different frequency components, making it more robust against various attacks and providing better security for hidden data.
+
+Understanding Discrete Wavelet Transform
+Basic Concepts :-
+
+The Discrete Wavelet Transform decomposes an image into multiple frequency bands by applying wavelet functions that analyze signals at different scales and resolutions. In two-dimensional applications, DWT processes the image in both vertical and horizontal directions, creating four distinct sub-bands after each level of decomposition:
+
+LL (Low-Low): Contains the approximation coefficients with most important image details
+
+LH (Low-High): Contains horizontal edge information
+
+HL (High-Low): Contains vertical edge information
+
+HH (High-High): Contains diagonal edge information
+
+Wavelet Properties for Steganography :-
+
+DWT possesses several properties that make it particularly suitable for steganography applications:
+
+Excellent space-frequency localization: Allows precise control over where data is embedded
+
+Multi-resolution analysis: Provides different levels of detail for embedding
+
+Human Visual System compatibility: Closely matches how human eyes process visual information
+Edge detection capabilities: High-frequency sub-bands locate image features less sensitive to human perception
