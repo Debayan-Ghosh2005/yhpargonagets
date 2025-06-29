@@ -1,0 +1,10 @@
+
+
+In this project, secret information is hidden inside an image using the F5 steganography method. Steganography is the idea of hiding data so that people cannot easily notice it. The process starts by choosing an apple image (`apple.jpg`) stored in the folder `C:\\cod\\yhpargonagets\\IS_Graphy\`. The goal is to add a secret message to this image and save the new image with the hidden message into another folder called `F5`. A Python program is made for this task, using two important libraries: `Pillow` (for opening and saving images) and `numpy` (for working with numbers and image data).
+
+The program opens the image and changes it into a format where the pixel values can be seen and edited. The F5 algorithm works on special numbers called DCT (Discrete Cosine Transform) coefficients, which show how the image looks in terms of patterns and frequencies. By changing these numbers a little, it is possible to hide parts of the secret message without making the image look different to the human eye.
+
+A random order of DCT coefficients is created so the secret message is spread out across the image, which makes it harder to find. The secret message is turned into bits (0s and 1s), and each bit is matched with a DCT coefficient. If the bit does not match the last bit of the coefficient, it is flipped so that it matches. The F5 method also uses matrix encoding, which helps hide the message with fewer changes to the image, so the hidden data is even harder to detect.
+
+The program also checks to make sure no coefficient becomes zero, because zeros could give hints that something is hidden. After the whole message is hidden, the new image with the secret inside is saved in the F5 folder. The program includes error checks so that if a file path is wrong or there is a problem while opening or saving the image, it shows an error message instead of crashing. This project creates a working program that hides a secret message inside an image using the F5 algorithm, keeping the hidden message invisible in the picture.
+

@@ -1,0 +1,12 @@
+
+
+
+
+In this project, secret information is hidden inside an image using the UDH (Unified Data Hiding) method. Steganography is the way of hiding data so that no one can easily see it. This project starts by choosing an image, like `apple.jpg`, stored in the folder `C:\\cod\\yhpargonagets\\IS_Graphy\`. The goal is to put a secret message into this image and save the new image with the hidden message in a folder called `UDH`, for example at `C:\\cod\\yhpargonagets\\IS_Graphy\\UDH\`. A Python program is made to do this, using important libraries such as `Pillow` to open and save images, and `numpy` to work with numbers and image data.
+
+The program first opens the image and changes it into a format where the pixel colors can be seen and edited. The UDH method hides secret data by changing the least significant bits (LSBs) of some pixel values. This means small changes are made in the image’s colors that people cannot see with their eyes, but that can store the secret message. The program spreads the hidden bits across different parts of the image so it is harder for anyone to find the secret.
+
+The secret message is changed into bits (0s and 1s), and these bits are hidden inside the pixel values of the image. The program makes sure the changes are small so the image looks the same as before. UDH can also add options like error checking or simple encryption so that the secret message stays safe and is not lost if the image gets edited a little.
+
+The program checks if the secret message will fit in the image and shows an error message if something goes wrong, like if the file path is wrong or there is a problem opening or saving the image. After the whole message is hidden, the program saves the new image with the secret in the `UDH` folder. This project gives a working way to hide secret messages inside images using the UDH method, so that the picture does not look different, but the secret stays hidden.
+

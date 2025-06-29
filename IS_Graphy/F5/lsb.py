@@ -38,7 +38,7 @@ os.makedirs(output_dir, exist_ok=True)
 output_image_path = os.path.join(output_dir, "apple_stego.png")
 
 # Message
-secret_message = "kitty kitty"
+secret_message = "Sulagna"
 
 # Encode
 encode_image(input_image_path, secret_message, output_image_path)
