@@ -1,0 +1,31 @@
+WOW Steganography: A Concise Overview
+
+Abstract:
+This document provides a concise summary of the WOW (Wavelet Obtained Weights) steganographic algorithm. WOW was a pioneering adaptive steganography method that introduced a sophisticated distortion function based on directional filter analysis to enhance security against statistical detection.
+
+1. Core Concept: Unpredictability as a Shield
+WOW (Wavelet Obtained Weights) was one of the first highly successful adaptive steganographic algorithms. Its core principle is to embed data only in regions of the cover image that are unpredictable in all directions. It identifies these regions by analyzing the image with a bank of directional high-pass filters.
+
+The underlying idea is that smooth areas and clean edges are statistically "predictable" in at least one direction. Any modification in these areas is easy to detect. In contrast, highly textured or noisy regions are difficult to model or predict from any direction, making them ideal for hiding data.
+
+2. The Distortion Function
+WOW's effectiveness comes from its clever distortion function design, which acts as a "weakest link" detector for predictability:
+
+Directional Filter Bank: The cover image is convolved with a set of three directional high-pass filters (e.g., horizontal, vertical, and diagonal). This produces three "residual maps," where each map highlights the image's predictability (or lack thereof) in that specific direction.
+
+Cost Aggregation: For each pixel, the absolute values of its three corresponding residuals are aggregated. WOW uses a mathematical function (a Hölder norm) that is dominated by the smallest of the three residual values.
+
+Assigning Costs: The final embedding cost for a pixel is inversely proportional to this aggregated value. This means that if a pixel is smooth (predictable) in even one direction, its corresponding residual will be low, leading to a high embedding cost. A pixel only receives a low cost if it is unpredictable (has high residual values) in all three directions simultaneously.
+
+This process effectively steers embedding changes away from smooth areas and clean edges, forcing them into complex textures.
+
+3. The Embedding Process
+Like its successor S-UNIWARD, WOW uses Syndrome-Trellis Codes (STCs) as its embedding framework. After the distortion cost is calculated for every pixel, STCs are used to embed the secret message in a way that minimizes the total accumulated distortion, providing a highly efficient and secure embedding payload.
+
+4. Strengths and Weaknesses
+Strengths: Highly effective at avoiding smooth regions and clean edges, which were major vulnerabilities in previous methods. It offered a significant leap in security against the steganalysis techniques of its time.
+
+Weaknesses: The strict criteria for selecting embedding regions could sometimes be exploited. Specialized steganalysis methods were later designed to specifically target the statistical properties of the regions that WOW favors. S-UNIWARD was later proposed as a simpler and more "universal" evolution of the concepts pioneered by WOW.
+
+5. Conclusion
+WOW was a foundational algorithm in adaptive steganography. It established the powerful principle of using directional filters to assess image content for secure embedding. Its design philosophy directly influenced the development of subsequent state-of-the-art methods, including S-UNIWARD, and remains a cornerstone in the study of information hiding.
