@@ -147,7 +147,7 @@ python AdEnSt.py
 | Debayan Ghosh    | [@Debayan-Ghosh2005](https://github.com/Debayan-Ghosh2005) |
 | Nirnoy Chatterjee  | [@Nirnoy12](https://github.com/Nirnoy12)|
 | Sulagna Chakraborty  | [@celestial201](https://github.com/celestial201)|
-
+| Subhradeep Kar  | [@SubOptimal](https://github.com/SubOptimal-Official)|
 ---
 ## 🙌 Contribute - Only for invited accounts!
 
